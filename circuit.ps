@@ -1,0 +1,20 @@
+%!PS
+/Courier findfont 20 scalefont setfont
+
+% 抵抗を描く関数
+/draw_resistor {
+    newpath
+    0 0 moveto
+    10 0 lineto 15 10 lineto 25 -10 lineto 35 10 lineto 45 -10 lineto 55 10 lineto 60 0 lineto 70 0 lineto
+    stroke
+} def
+
+% 回路図の描画
+300 400 translate
+draw_resistor
+
+% テキストの描画
+75 -5 moveto
+(R1 = 10k[ohm]) show
+
+showpage
