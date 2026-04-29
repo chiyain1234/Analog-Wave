@@ -1,7 +1,6 @@
 %!PS
 /Courier findfont 20 scalefont setfont
 
-% 抵抗を描く関数
 /draw_resistor {
     newpath
     0 0 moveto
@@ -9,11 +8,9 @@
     stroke
 } def
 
-% 回路図の描画
 300 400 translate
 draw_resistor
 
-% テキストの描画
 75 -5 moveto
 (R1 = 10k[ohm]) show
 
